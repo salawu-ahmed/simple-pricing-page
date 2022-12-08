@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/* GENRIC STYLES */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+}
+.primary_nav,
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* NAVBAR STYLES */
+.primary_nav{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 18px;
+}
+.nav_links{
+    width: 40%;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500px;
+}
+.nav_link{
+    padding: 10px;
+    border-radius: 3px;
+}
+.nav_link a {
+    color: #000000;
+}
+.nav_link:nth-child(5){
+    background-color: #1465FA;
+}
+.nav_link:nth-child(5) a{
+    color: #FFFFFF;
+}
+
+
+/* HERO SECTION STYLES */
+.hero{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h2{
+    font-weight: 900px;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+.hero ul{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    list-style: none;
+}
+.hero i {
+    color: #1465FA;
+    font-size: 18px;
+}
+.hero p {
+    font-weight: 900px;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 70%;
+}
+.hero p::after{
+    content: 'get three months free';
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -30px;
+    left: -300px;
+    transform: rotateX(-45deg);
+}
+.hero p::before{
+    content: '';
+    height: 100px;
+    width: 5px;
+    background-color: #1465FA;
+    position: relative;
+    top: 20px;
+}
+
+
+/* PRICING SECTION */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .column{
+    text-align: center;
+    border: 3px solid #DDDDDD;
+    width: 30%;
+    padding: 5px;
+}
+.offers {
+    margin: 20px 20px;
+    text-align: center;
+}
+.column ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    font-size: 14px;
+    color: #747474;
+    margin: 10px;
+}
+.column h2{
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.column span{
+    font-weight: 800px;
+    font-style: normal;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+.column .sub{
+    color: #747474;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.inner_wrapper a{
+    border: 3px solid #1465FA;
+    color: #1465FA;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+/* SECOND PRICING COLUMN */
+.column:nth-child(2){
+    background-color: #2C3140;
+}
+.column:nth-child(2) .inner_wrapper{
+    color: #FFFFFF;
+}
+.column:nth-child(2) a{
+    background-color: #1465FA;
+    color: #FFFFFF;
+}
